@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
+
+section {
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Urbanist', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 15px;
+    text-shadow: 10px 21px 10px rgba(0, 0, 0, 0.5);   
+}
+@media(min-width:992px){
+
+    h1{
+        letter-spacing: 10px;
+        font-size: 50px;
+        background: rgba(241, 237, 237, 0.258);
+    }
+}
+@media(max-width:991px){
+
+    h1{
+        letter-spacing: 10px;
+        font-size: 34px;
+        background: rgba(241, 237, 237, 0.258);
+        text-align: center;
+        
+    }
+    .navbar .navbar-brand img{
+        height: 100px;
+    }
+}
+
+.bg-image {
+
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    animation: scaleInfinite infinite 15s;
+}
+
+@keyframes scaleInfinite {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar .nav-link {
+
+    font-size: 18px;
+    margin-left: 30px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.842)
+}
+
+.navbar .navbar-brand img{
+
+    max-height: 140px;
+}
+
+
+.navbar .nav-link::before {
+
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 0px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.842);
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.842);
+    transition: all .6s ease;
+    transform-origin: center;
+}
+
+.navbar .nav-item:hover .nav-link::before {
+
+    width: 100%;
+}
+
+.navbar .navbar-toggler {
+
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar .toggle-btn {
+
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    z-index: 1100;
+}
+
+.navbar .toggle-btn .bar {
+
+    width: 25px;
+    height: 3px;
+    margin: 7px 0 7px auto;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color:  rgba(255, 255, 255, 0.842);
+}
+
+.navbar .toggle-btn .bar:nth-child(2) {
+
+    width: 35px;
+}
+
+.navbar #toggle-menu {
+
+    display: none;
+}
+
+.navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(2) {
+
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(1) {
+
+    -webkit-transform: translateY(12px) rotate(45deg);
+    -ms-transform: translateY(12px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
+}
+
+.navbar #toggle-menu:checked+label.toggle-btn .bar:nth-child(3) {
+
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.modal-dialog {
+
+    margin-left: -3px;
+    margin-top: -3px;
+    width: 85%;
+}
+
+.modal-dialog .modal-content{
+
+    background-color: #47555e;
+}
+
+.modal-dialog .modal-header, .modal-dialog .modal-footer{
+
+    border: none;
+}
+
+.modal-dialog .modal-header img{
+
+    max-height: 80px;
+}
+
+.modal-dialog .modal-body {
+
+    padding-top: 65px;
+    background-color:  rgba(255, 255, 255, 0.842);
+}
+
+.modal-dialog .nav-link {
+
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #47555e;
+}
+
+.modal-dialog .nav-link i {
+
+    margin-right: 10px;
+    color: #47555e;
+}
+
+.modal-dialog .btn-secondary{
+
+    color: #47555e;
+    background-color: rgba(255, 255, 255, 0.842);
+    border: none;
+}
