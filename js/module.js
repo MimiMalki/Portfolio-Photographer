@@ -61,7 +61,7 @@ const tarifsdb = (dbname, table) => {
     obj = {
       id: sortobj.id,
       title: sortobj.title,
-      descreption: sortobj.descreption,
+      description: sortobj.description,
       price: sortobj.price
     };
     return obj;

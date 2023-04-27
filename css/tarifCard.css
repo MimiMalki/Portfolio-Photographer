@@ -1,0 +1,182 @@
+
+main{
+    margin-top: 10%;
+} 
+h1{
+    color:#47555e;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    /* border-bottom: 1px dashed gray; */
+    text-align: center;
+
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    grid-gap:30px;
+    margin: 10px;
+}
+.cardWrapper{
+    position: relative;
+    min-height:250px;
+    perspective: 2000px;
+    perspective-origin: top;
+}
+.cardWrapper:hover .card{
+    transform: rotateY('180deg');
+    -webkit-transform: rotateY('180deg');
+    -moz-transform: rotateY('180deg');
+    -ms-transform: rotateY('180deg');
+    -o-transform: rotateY('180deg');
+}
+
+.card{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    color: white;
+    font-weight: bold;
+    -webkit-transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    -moz-transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    -ms-transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+    -o-transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
+}
+/*
+.cardFront,
+.cardBack{
+    position:absolute ;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.cardFront{
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.cardWrapper:nth-child(even) .cardFront{
+    background-color: aqua;
+}
+.cardFront{
+    font: size 2px;
+    line-height: 35px;
+
+} */
+
+/* .card h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+.card p.price {
+    font-weight: bold;
+    color: #f00;
+}  */
+ 
+
+
+
+    /* .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    font-weight: bold;
+    }
+    */
+    .card:hover {
+    transform: rotateY(180deg);
+    } 
+    
+    .cardFront,
+    .cardBack {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    }
+    
+    .cardFront {
+    transform: rotateY(0deg);
+    background: #47555e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    }
+    .cardFront p {
+        font-size: 25px;
+    }
+    .cardFront .fa-arrow-right{
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+    }
+    .cardWrapper:nth-child(even) .cardFront{
+        background-color: rgb(5, 72, 72);
+    }
+    .cardBack {
+    background:#47555e;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    }
+    .cardBack p {
+        font-size: 25px;
+    }
+    .cardWrapper:nth-child(even) .cardBack{
+        background-color: rgb(5, 72, 72);
+    }
+    .cardWrapper {
+    margin-bottom: 0px;
+    } 
+
+    /* Style for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+  }
+  
+  /* Style for screens with a minimum width of 768px */
+  @media only screen and (min-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 30px;
+    }
+  }
+  
+  /* Style for screens with a minimum width of 992px */
+  @media only screen and (min-width: 992px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 40px;
+    }
+  }
+  
+  /* Style for screens with a minimum width of 1200px */
+  /* @media only screen and (min-width: 1200px) {
+    .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      grid-gap: 50px;
+    }
+  } */
