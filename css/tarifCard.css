@@ -1,24 +1,22 @@
 
 main{
-    margin-top: 10%;
+    margin-top: 8.5%;
 } 
 h1{
     color:#47555e;
-    margin: 20px 0;
     padding-bottom: 20px;
-    /* border-bottom: 1px dashed gray; */
     text-align: center;
 
 }
 .card-container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
-    grid-gap:30px;
-    margin: 2em 15em ;
+    grid-gap:20px;
+    margin: 0.5em 9em ;
 }
 .cardWrapper{
     position: relative;
-    min-height:250px;
+    min-height:245px;
     perspective: 2000px;
     perspective-origin: top;
 }
@@ -42,59 +40,6 @@ h1{
     -ms-transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
     -o-transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
 }
-/*
-.cardFront,
-.cardBack{
-    position:absolute ;
-    height: 100%;
-    width: 100%;
-    padding: 30px;
-    border-radius: 8px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-.cardFront{
-    background: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-.cardWrapper:nth-child(even) .cardFront{
-    background-color: aqua;
-}
-.cardFront{
-    font: size 2px;
-    line-height: 35px;
-
-} */
-
-/* .card h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-}
-.card p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-}
-.card p.price {
-    font-weight: bold;
-    color: #f00;
-}  */
- 
-
-
-
-    /* .card {
-    position: relative;
-    transform-style: preserve-3d;
-    transition: all 0.5s ease-in-out;
-    color: white;
-    font-weight: bold;
-    }
-    */
     .card:hover {
     transform: rotateY(180deg);
     } 
