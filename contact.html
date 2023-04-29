@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Photography Site</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
 
@@ -15,7 +15,7 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js" defer></script>
   <script src="js/header.js" defer></script>
 
-  
+
 </head>
 
 <body>
@@ -23,25 +23,67 @@
   <!-- header -->
   <div id="header">
   </div>
-<div class="body container">
-  <form class="form" action="https://formspree.io/f/mbjepavy" method="POST">
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="">Nom</label>
-      <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom">
+  <!-- <div class="body container">
+    <form class="form" action="https://formspree.io/f/mbjepavy" method="POST">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="">Nom</label>
+        <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" id="exampleFormControlInput2"
+          placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Votre message:</label>
+        <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-secondary" type="submit">Envoyer </button>
+      </div>
+    </form>
+  </div> -->
+
+  <div class="container body">
+    <div class="img">
+      <img src="images/img.svg">
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email</label>
-      <input type="email" name="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+    <div class="login-content">
+      <form class="form" action="https://formspree.io/f/mbjepavy" method="POST">
+        <h2 class="title">Me contacter</h2>
+        <div class="input-div one">
+          <div class="i">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="div">
+            <h5>Nom</h5>
+            <input type="text" class="input">
+            <input type="input" class="input" id="exampleFormControlInput1">
+          </div>
+        </div>
+        <div class="input-div ">
+          <div class="i">
+            <i class="fa-solid fa-at"></i>
+          </div>
+          <div class="div">
+            <h5>Email</h5>
+            <input type="email" class="input">
+            <input type="email" name="email" class="input" id="exampleFormControlInput2">
+          </div>
+        </div>
+        <div class="input-div  ">
+
+          <div class="i">
+            <i class="fa-regular fa-message"></i>
+          </div>
+          <h5>Votre message</h5>
+          <textarea name="Message" auto-complete="off"></textarea>
+        </div>
+
+        <input type="submit" class="bouton" value="Envoyer">
+      </form>
     </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Votre message:</label>
-      <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-secondary" type="submit" >Envoyer </button>
-    </div>
-  </form>
-</div>
+  </div>
 </body>
 
 </html>
