@@ -108,7 +108,7 @@ function table() {
       createEle("tr", tbody, tr => {
         for (const value in data) {
           createEle("td", tr, td => {
-            td.textContent = data.price === data[value] ? `$ ${data[value]}` : data[value];
+            td.textContent = data.price === data[value] ? `€ ${data[value]}` : data[value];
           });
         }
         createEle("td", tr, td => {
