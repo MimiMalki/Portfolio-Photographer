@@ -6,7 +6,7 @@ import prodb, {
 } from "./module.js";
 
 
-let db = prodb("Tarifdb", {
+let db = prodb("photographedb", {
   tarifs: `++id, title, description, price`
 });
 
@@ -77,7 +77,7 @@ btnupdate.onclick = () => {
 // delete button
 btndelete.onclick = () => {
   db.delete();
-  db = prodb("Tarifdb", {
+  db = prodb("photographedb", {
     tarifs: `++id, title, description, price`
   });
   db.open();
@@ -164,11 +164,11 @@ function textID(textboxid) {
 function getMsg(flag, element) {
   if (flag) {
     // call msg 
-    element.classTarif += " movedown";
+    element.className += " movedown";
 
     setTimeout(() => {
-      element.classList.forEach(classTarif => {
-        classTarif == "movedown" ? undefined : element.classList.remove('movedown');
+      element.classList.forEach(className => {
+        className == "movedown" ? undefined : element.classList.remove('movedown');
       })
     }, 4000);
   }

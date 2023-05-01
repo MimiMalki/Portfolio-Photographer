@@ -1,4 +1,4 @@
-const tarifsdb = (dbname, table) => {
+const photographedb = (dbname, table) => {
     const db = new Dexie(dbname);
     db.version(1).stores(table);
     db.open();
@@ -68,7 +68,7 @@ const tarifsdb = (dbname, table) => {
   }
   
   
-  export default tarifsdb;
+  export default photographedb;
   export {
     bulkcreate,
     createEle,

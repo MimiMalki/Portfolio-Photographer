@@ -1,5 +1,5 @@
 // Initialisez la base de données indexDB
-const db = new Dexie('Tarifdb');
+const db = new Dexie('photographedb');
 db.version(1).stores({
   tarifs: '++id, title, description, price',
 });
