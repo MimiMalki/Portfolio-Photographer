@@ -51,4 +51,27 @@
     width: 300px;
     height: 300px;
   }
-  
+  /* Style for screens with a minimum width of 768px */
+  @media screen and (max-width: 768px) {
+    .container-fluid {
+      margin-top: 16%;
+    }
+  }
+  /* Style for screens with a minimum width of 768px */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container-fluid {
+      margin-top: 10%;
+    }
+  }
+   /* Style for screens with a minimum width of 1024px */
+  @media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container-fluid {
+      margin-top: 8%;
+    }
+  }
+    /* Style for screens with a minimum width of 1440px */
+  @media screen and (min-width: 1440px) {
+    .container-fluid {
+      margin-top: 6%;
+    }
+  }
