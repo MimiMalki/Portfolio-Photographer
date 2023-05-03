@@ -1,12 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
 
+* {
+    font-family: 'Urbanist', sans-serif;
+}
 section {
 
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    font-family: 'Urbanist', sans-serif;
     position: relative;
     display: flex;
     justify-content: center;

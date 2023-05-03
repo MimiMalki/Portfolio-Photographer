@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
 
+*{
+    font-family: 'Urbanist', sans-serif;
+}
 .body{
     margin-top: 10%;
     display: grid;
@@ -34,11 +37,9 @@ form{
     height: 100px;
 }
 
-.login-content h2{
+.login-content h1{
 	margin: 15px 0;
 	color: #47555e;
-	text-transform: uppercase;
-	font-size: 2rem;
 }
 
 .login-content .input-div
