@@ -6,10 +6,10 @@ agréable et fonctionnelle où notre photographer peut partager sa passion et fa
 
 ## Déploiement en local.
 
-1.Assurez-vous que vous avez installé Node.js et npm sur votre ordinateur.
-2.Clonez le projet depuis depuis le référentiel  GitHub en utilisant la commande: ``` git clone https://github.com/MimiMalki/Portfolio-Photographer.git ``` 
+1. Assurez-vous que vous avez installé Node.js et npm sur votre ordinateur.
+2. Clonez le projet depuis depuis le référentiel  GitHub en utilisant la commande: ``` git clone https://github.com/MimiMalki/Portfolio-Photographer.git ``` 
 
 ## Déploiement en ligne .
 
-le deploiment en ligne est faite via le service gratuit de Netlify.
+Le deploiment en ligne est faite via le service gratuit de Netlify.
 Lien d'accès est : https://charlescantin-photographer.netlify.app .
