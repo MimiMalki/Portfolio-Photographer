@@ -1,6 +1,7 @@
 # Portfolio photographe - Front-end
 
-Ce projet contient le code front-end pour l'application web ou web mobile Portfolio photographe. L'objectif de ce projet est de développer une interface utilisateur
+Ce projet contient le code front-end pour l'application web ou web mobile Portfolio photographe.
+L'objectif de ce projet est de développer une interface utilisateur
 agréable et fonctionnelle où notre photographer peut partager sa passion et faire reconnaitre son talent pour immortaliser les événements de ses clients.
 
 
