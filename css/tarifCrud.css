@@ -16,12 +16,12 @@ h1{
 
 }
 .d-flex input {
-    margin: .9em 0em;
+    margin: .9em 0.1em;
 }
 
 .d-flex button {
-    margin: 1.5em .6em;
-    padding: .3em 2.4em;
+    margin: 1.5em 0.1em;
+    padding: .1em 2.5em;
 }
 
 .d-flex table {
@@ -36,6 +36,19 @@ table .btnedit {
 table .btndelete {
     color: tomato;
     cursor: pointer;
+}
+.container {
+    width: 100%;
+    /* overflow: hidden; Pour contenir les éléments flottants */
+}
+.left{
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
 }
 
 /* messages */
@@ -59,3 +72,63 @@ table .btndelete {
         top: -40px;
     }
 }
+
+/* Style for screens with a max width of 768px */
+@media screen and (max-width: 768px)  {
+    .containerr{
+        width: 120%;
+    }
+    h1{
+        width: 100%;
+        font-size: 2rem;
+    }
+    
+    .left{
+        width: 120%;
+    }
+    
+    .right {
+        width: 99%;
+    }
+    
+    .d-flex input {
+        margin: .9em 0.1em;
+    }
+    
+    .d-flex button {
+        
+        justify-content: space-between;
+
+        margin: 0.1em 0.5em;
+        padding: .1em 0.5em;
+    }
+    
+    .d-flex table {
+        width: 15%;
+        margin: 1em 0.1em;
+    }
+  }
+ /* Style for screens with a minimum width of 768px */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .containerr{
+        width: 100%;
+    }
+    h1{
+        justify-content: center;
+        font-size: 2rem;
+    }
+    
+    .left{
+        float: left;
+        width: 85%;
+    }
+    
+    .right {
+        float: right;
+        width: 100%;
+    }
+    .d-flex {
+        justify-content: space-between;
+
+    }
+  }

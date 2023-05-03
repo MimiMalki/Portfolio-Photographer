@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gestion des tarifs </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="../css/tarifCrud.css" />
+</head>
+
+<body>
+  <main>
+    <div class="containerr">
+      <h1 class="bg-light py-4 ">
+        <i class="fa-solid fa-money-bill"></i>
+        Gestion tarifs et prestations
+      </h1>
+    </div>
+    <div class="container">
+        <div class="left">
+          <div class="d-flex justify-content-center">
+            <form class="w-100">
+              <input type="text" id="tarifid" class="form-control" autocomplete="off" readonly placeholder="ID" />
+              <div class="form-group">
+                <input type="text" id="title" class="form-control" autocomplete="off" placeholder="Titre" />
+              </div>
+              <div class="form-group">
+                <textarea name="description" id="description" placeholder="Description" class="form-control" required
+                  rows="5" cols="33"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="text" id="price" class="form-control" autocomplete="off" placeholder="Prix" />
+              </div>
+            </form>
+
+          </div>
+          <div class="d-flex ">
+            <button class="btn btn-success" id="btn-create">Ajouter</button>
+            <button class="btn btn-primary" id="btn-read">Visialser</button>
+            <button class="btn btn-warning" id="btn-update">Modifier</button>
+            <button class="btn btn-danger" id="btn-delete">Supprimer tous</button>
+          </div>
+
+          <!-- <button id="show-cards-btn">Afficher les tarifs</button> -->
+          <a href="../tarifCard.html">Afficher les tarifs</a>
+          <!--  Table -->
+        </div>
+        <div class="d-flex table-data right">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Description</th>
+                <th scope="col">Prix</th>
+                <th scope="col">Modifier</th>
+                <th scope="col">Supprimer</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+      <div id="notfound"></div>
+    
+
+  </main>
+
+  <!-- Labels -->
+  <div class="w-100 btn btn-success insertmsg">Data Inserted Successfully...!</div>
+  <div class="w-100 btn btn-warning updatemsg">Data Updated..! Refresh Database To See Result</div>
+  <div class="w-100 btn btn-danger deletemsg">Data Deleted..!</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+  <!-- Include Dexie -->
+  <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+  <!-- Custom main file-->
+  <script src="../js/tarifCrud.js" type="module"></script>
+  <script src="../js/tarifCard.js" type="module"></script>
+</body>
+
+</html>
