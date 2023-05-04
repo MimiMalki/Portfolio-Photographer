@@ -67,7 +67,7 @@
   /* Style for screens with a minimum width of 768px */
   @media screen and (max-width: 768px) {
     .container-fluid {
-      margin-top: 16%;
+      margin-top: 22%;
     }
     .filterDiv{
       grid-template-columns: repeat(2,1fr);
